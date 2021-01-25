@@ -1,1 +1,1 @@
-# beekeeper_odoo_connector
+# Beekeeper connector
