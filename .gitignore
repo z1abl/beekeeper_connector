@@ -1,3 +1,6 @@
+# Manually added
+*.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -112,7 +115,8 @@ venv.bak/
 
 # Spyder project settings
 .spyderproject
-.spyproject
+.spyproject.DS_Store
+
 
 # Rope project settings
 .ropeproject
