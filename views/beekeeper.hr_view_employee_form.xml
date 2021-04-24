@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+       <record id="beekeeper_hr_view_employee_form" model="ir.ui.view">
+            <field name="name">beekeeper.hr_view_employee_form</field>
+            <field name="model">hr.employee</field>
+            <field name="priority">16</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <page string='Beekeeper'>
+                        <group>
+                            <group>
+                                <field name="bkpr_user"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+       </record>
+    </data>
+</odoo>
+

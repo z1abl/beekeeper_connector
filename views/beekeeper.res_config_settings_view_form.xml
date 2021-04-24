@@ -1,0 +1,40 @@
+<odoo>
+    <data>
+       <record id="beekeeper_res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">beekeeper.res_config_settings_view_form</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority">16</field>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//*[@name='integration']" position="inside">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                    <div class="o_setting_left_pane">
+                        <field name="module_beekeeper_connector" />
+                    </div>
+                    <div class="o_setting_right_pane">
+                        <label string="Beekeeper" for="module_beekeeper_connector"/>
+                        <div class="text-muted">
+                            Beekeeper connector
+                        </div>
+                        <div class="content-group" attrs="{'invisible': [('module_beekeeper_connector','=',False)]}" id="msg_module_beekeeper_connector">
+                        </div>
+                        <div id="msg_module_beekeeper_connector" position="replace">
+                            <div class="content-group" attrs="{'invisible': [('module_beekeeper_connector','=',False)]}">
+                               <div class="mt16 row">
+                                    <label for="beekeeper_token" string="API token" class="col-3 col-lg-3 o_light_label"/>
+                                    <field name="beekeeper_token" password="True" nolabel="1"/>
+                                    <label for="beekeeper_base_url" string="Base url" class="col-3 col-lg-3 o_light_label"/>
+                                    <field name="beekeeper_base_url" nolabel="1"/>
+                                </div>
+                                <div class="text-muted">
+                                    https://example.beekeeper.io/api/2
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+    		    </xpath>
+            </field>
+       </record>
+    </data>
+</odoo>

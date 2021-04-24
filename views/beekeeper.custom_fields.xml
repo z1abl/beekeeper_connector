@@ -1,0 +1,32 @@
+<odoo>
+  <data>
+
+    <record id="bkpr_custom_field_tree" model="ir.ui.view">
+      <field name="name">Custom field</field>
+      <field name="model">custom.field</field>
+      <field name="arch" type="xml">
+        <tree string="Custom fields">
+          <field name="field_name"/>
+          <field name="key"/>
+          <field name="type"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <record id="bkpr_custom_field_form" model="ir.ui.view">
+      <field name="name">Custom field</field>
+      <field name="model">custom.field</field>
+      <field name="arch" type="xml">
+        <form string="Custom field">
+          <group>
+            <field name="field_name" style="width: 15%"/>
+            <field name="key" style="width: 15%"/>
+            <field name="type" style="width: 15%"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+  </data>
+</odoo>

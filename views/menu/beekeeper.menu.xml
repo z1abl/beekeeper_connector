@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <menuitem id="beekeeper_menu" name="Beekeeper" sequence="10" parent="hr.menu_hr_root"/>
+        <menuitem id="beekeeper_custom_fields" name="Custom fields" sequence="1" action="beekeeper_custom_field_action" parent="beekeeper_menu"/>
+        <menuitem id="beekeeper_sync" name="Sync" sequence="2" action="" parent="beekeeper_menu"/>
+        <menuitem id="beekeeper_sync_users" name="Users" sequence="3" action="beekeeper_users_sync_action" parent="beekeeper_sync"/>
+        <menuitem id="beekeeper_sync_custom_fields" name="Custom fields" sequence="4" action="beekeeper_custom_fields_sync_action" parent="beekeeper_sync"/>
+    </data>
+</odoo>

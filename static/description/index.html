@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40">
+
+  <article class="page-section py-4">
+
+    <section class="container-fluid">
+
+      <div class="row justify-content-center">
+        <div class="col-10 col-sm-10 col-md-8 col-lg-4 text-center">
+
+          <section class="card">
+            <img class="card-img-top mt-4 mx-auto rounded" src="images/icon.png" style="width: 125px;height: 125px" alt="Beekeeper connector">
+            <div class="card-body">
+              <h4 class="layout-title card-title">Beekeeper connector</h4>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <div class="row justify-content-center my-4">
+        <section class="layout-text col-10">
+           <p>Beekeeper connector allows to synchronise employees between Odoo and Beekeeper.</p>
+           <p>This module depends on Python libraries: <code>json,requests</code>.</p>
+           <p><b>Install Beekeeper app.</b></p>
+           <img src="images/install.png" class="img-fluid rounded img-thumbnail mb-3" alt="">
+           <p><b>Set API token and base URL in Settings.</b></p>
+           <img src="images/settings.png" class="img-fluid rounded img-thumbnail mb-3" alt="">
+           <p>In the Employee's section will appear a new menu: "Beekeeper" with two <b>submenus</b>: Custom fields and Sync.</p>
+           <img src="images/menu.png" class="img-fluid rounded img-thumbnail mb-3" alt="">
+           <p><b>Custom fields:</b> in this tab you can check imported custom fields from Beekeeper and map them manually
+               with Odoo's field names. For example: in Beekeeper custom field has a key: "birthdate" but in Odoo it's a field: "birthday".</p>
+           <img src="images/custom_fields.png" class="img-fluid rounded img-thumbnail mb-3" alt="">
+           <p><b>Sync:</b> in this submenu you can run manually Users/Custom fields synchronisation.</p>
+           <p>Employees with selected "Beekeeper user" field will be synchronised <b>only</b>.</p>
+           <img src="images/bkpr_user.png" class="img-fluid rounded img-thumbnail mb-3" alt="">
+           <p><b>Automation (cron):</b> in scheduled actions will appear "Beekeeper User Sync" cron, which by default is disabled and allows
+              to synchronise custom fields/users based on time trigger.</p>
+           <img src="images/cron.png" class="img-fluid rounded" alt="">
+        </section>
+      </div>
+    </section>
+  </article>
+
+</body>
+
+</html>
+
