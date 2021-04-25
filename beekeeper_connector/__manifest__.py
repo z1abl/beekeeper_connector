@@ -37,5 +37,15 @@
         'demo/demo.xml',
     ],
 
-    'images': []
+    'live_test_url': 'https://youtu.be/6TrHdyQmMYc',
+
+    'images': ['static/description/images/bkpr_user.png',
+               'static/description/images/cron.png',
+               'static/description/images/custom_field.png',
+               'static/description/images/custom_fields.png',
+               'static/description/images/icon.png',
+               'static/description/images/install.png',
+               'static/description/images/menu.png',
+               'static/description/images/settings.png',
+               'static/description/images/main_screenshot.png']
 }
