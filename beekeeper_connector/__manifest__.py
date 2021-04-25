@@ -20,6 +20,9 @@
 
     # any module necessary for this one to work correctly
     'depends': ['hr'],
+    'price': 200,
+    'currency': 'EUR',
+    'license': 'OPL-1',
 
     # always loaded
     'data': [
@@ -39,7 +42,8 @@
 
     'live_test_url': 'https://youtu.be/6TrHdyQmMYc',
 
-    'images': ['static/description/images/bkpr_user.png',
+    'images': ['static/description/images/first_image.png',
+               'static/description/images/bkpr_user.png',
                'static/description/images/cron.png',
                'static/description/images/custom_field.png',
                'static/description/images/custom_fields.png',
