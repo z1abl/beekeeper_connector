@@ -20,8 +20,6 @@
 
     # any module necessary for this one to work correctly
     'depends': ['hr'],
-    'price': 200,
-    'currency': 'EUR',
     'license': 'OPL-1',
 
     # always loaded
